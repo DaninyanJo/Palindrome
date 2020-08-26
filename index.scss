@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(169, 169, 169);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.box{
+    z-index: 100000;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    background: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 20px -5px;
+    border-radius: 15px;
+    position: relative;
+    
+
+    span{
+        font-size: 2rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+    input{
+        outline: none;
+        border: none;
+        border-bottom:  1px solid dodgerblue;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+        height: 2em;
+        width: 20em;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    button{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        height: 2em;
+        width: 10em;
+        cursor: pointer;
+        margin: 1rem 0;
+        border-radius: 60px;
+        box-shadow: 1px 1px 8px -1px;
+        
+        transition: .3s;
+        &:hover {
+
+            background: dodgerblue;
+            box-shadow: 3px 5px 8px -1px #000;
+            color: #fff;    
+
+        }
+        &:active{
+            box-shadow: inset 3px 4px 8px rgba(0, 0, 0, 0.5);
+           
+        }
+
+    }
+}
+.container{
+    position: relative;
+}
+.answer {
+    border-radius: 30px;
+    font-size: 1.4rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    transform: translate(-50% , -52%);
+    left: 50%;
+    right: 50%;
+   
+    z-index: 1;
+    bottom: 0;
+    transition: all 1s;
+}
+p{
+    background: #eb4e4e;
+}
